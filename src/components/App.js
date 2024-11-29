@@ -1,2 +1,13 @@
-<p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
+import React from "react";
+import ContextReducer from "./contextReducer";
+import { AppProvider } from "./Appcontext";
 
+const App = () => {
+    return (
+        <AppProvider>
+            <ContextReducer />
+        </AppProvider>
+    );
+};
+
+export default App;
